@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+@author Maciej Sławik
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!--Plugins section-->
+
+    <type name="Magento\Backend\Block\Cache\Permissions">
+        <plugin name="Gallinago_ProductionUtils::cache_permissions"
+                type="Gallinago\ProductionUtils\Plugin\Backend\Block\Cache\Permissions"
+                sortOrder="10"
+                disabled="false"
+        />
+    </type>
+
+    <!--End of plugins section-->
+
+</config>
